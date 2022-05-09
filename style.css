@@ -1,0 +1,242 @@
+/* CSs Start */
+header {
+    background-color: rgb(0, 0, 0, .5);
+    
+}
+/* menu */
+nav {
+    text-align: right;
+}
+nav ul{
+    line-height: 37px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin: -4px;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 8px 20px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+nav ul li:hover >a{
+    color: black;
+}
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    background-color: #fff;
+    height: 5px;
+    width: 0;
+    transition: .5s;
+}
+
+nav ul li a:hover::before{
+    width: 90%;
+    left: 5%;
+}
+
+
+
+
+/* Dropdown Menu */
+
+nav ul li ul {
+	position: absolute;
+	background-color: #ddd;
+	width: 250px;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	top: 73px;
+	transition: 2s;
+	transform: scaleY(0);
+	padding-left: 0px;
+	z-index: 1;
+}
+nav ul li ul li{
+    display: block;
+    padding: 10px 0px;
+    
+   
+}
+nav ul li ul li a{
+    padding-left: 0px;
+    margin-left: 0px;
+    display: block;
+    
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Banner */
+.banner {
+    background-image: url(./img19/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px;
+    /* z-index: -1; */
+    position: relative;
+    /*! margin-top: -69px; */
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(73, 61, 61, .6);
+    z-index: -1;
+    
+}
+
+.banner h3::after {
+    content: '';
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    height: 2px;
+    width: 130px;
+    background: white;
+}
+.banner h3::before {
+    content: "";
+    height: 2px;
+    width: 130px;
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 58%;
+}
+.banner h1 {
+    font-size: 70px;
+}
+/* .banner button:hover{
+    background-color: #fff;
+}
+
+.banner button{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.banner button a{
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: red;  
+} */
+
+.banner a{
+    /* height: 30px;
+    width: 100px; */
+    border-radius: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #47dd21;
+    display: inline-block;
+    z-index: 9999px;
+    color: red;
+    transition: 1s;
+   
+}
+.banner a:hover{
+    background-color: #ffff; 
+    
+}
+
+
+/* Service */
+
+
+.service .box:hover >button{
+    background-color: rgb(167, 167, 245);
+    color: black;
+}
+.service .box:hover{
+    background-color: #ddd;
+   transition: .5s;
+}
+.service .box img{
+    transition: 1s;
+}
+.service .box:hover img {
+    transform: rotateY(180deg);
+    
+}
+.service .box button{
+    transition: .5s;
+    b
+}
+.service .box button:hover{
+    background-color: #000;
+    color: white;
+    transition: 1s;
+    transform: translateY(10px);
+    
+    
+}
+
+/* ABout */
+.about button a{
+    text-decoration: none;
+}
+.about button:hover >a{
+    color: black;
+}
+.about button:hover{
+    background-color: aqua;
+    transition: .5s;
+}
+
+
+/* Contact */
+.content{
+    overflow: hidden;
+    z-index: 9;
+}
+
+/* Footer */
+footer{
+    background-color: #6D6D6D;
+}
+footer span{
+    line-height: 60px;
+    
+}
+footer p{
+    line-height: 50px;
+}
